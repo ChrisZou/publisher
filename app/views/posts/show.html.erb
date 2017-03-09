@@ -1,31 +1,32 @@
 <%- model_class = Post -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
-</div>
+<div class="center_content">
+  <div class="page-header">
+    <h1><%= t '.title', :default => @post.title %></h1>
+  </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
-  <dd><%= @post.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:content) %>:</strong></dt>
-  <dd><%= @post.content %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:jianshu_collection) %>:</strong></dt>
-  <dd><%= @post.jianshu_collection %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:zhihu_collection) %>:</strong></dt>
-  <dd><%= @post.zhihu_collection %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:zhihu_tags) %>:</strong></dt>
-  <dd><%= @post.zhihu_tags %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:douban_rating) %>:</strong></dt>
-  <dd><%= @post.douban_rating %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:wechat_gzh_url) %>:</strong></dt>
-  <dd><%= @post.wechat_gzh_url %></dd>
-</dl>
+  <dl class="dl-horizontal">
+    <dt><strong><%= '简书专题' %>:</strong></dt>
+    <dd><%= @post.jianshu_collection %></dd>
+    <dt><strong><%= '知乎专栏' %>:</strong></dt>
+    <dd><%= @post.zhihu_collection %></dd>
+    <dt><strong><%= '知乎标签' %>:</strong></dt>
+    <dd><%= @post.zhihu_tags %></dd>
+    <dt><strong><%= '豆瓣评分' %>:</strong></dt>
+    <dd><%= @post.douban_rating %></dd>
+    <dt><strong><%= '稀土掘金分享链接' %>:</strong></dt>
+    <dd><%= @post.wechat_gzh_url %></dd>
+    <dt><strong><%= '开发者前线分享链接' %>:</strong></dt>
+    <dd><%= @post.wechat_gzh_url %></dd>
+    <div id="post_show_content"><%= raw(@post.render_markdown) %></div>
+  </dl>
 
-<%= link_to t('.back', :default => t("helpers.links.back")),
-              posts_path, :class => 'btn btn-default'  %>
-<%= link_to t('.edit', :default => t("helpers.links.edit")),
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              posts_path, :class => 'btn btn-default' %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_post_path(@post), :class => 'btn btn-default' %>
-<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
               post_path(@post),
               :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :data => {:confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?'))},
               :class => 'btn btn-danger' %>
+</div>

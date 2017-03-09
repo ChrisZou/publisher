@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 //= require markdown
+
 function selectText(containerid) {
     if (document.selection) {
         var range = document.body.createTextRange();
@@ -27,6 +28,7 @@ function selectText(containerid) {
         window.getSelection().addRange(range);
     }
 }
+
 $(document).ready(function () {
     $('#post_content').keyup(function () {
             var input = $("#post_content").val();
@@ -35,6 +37,9 @@ $(document).ready(function () {
     );
     $('#post_content_rendered').click(function() {
         selectText('post_content_rendered')
-    })
+    });
+    $('#post_show_content').click(function() {
+        selectText('post_show_content')
+    });
 });
 

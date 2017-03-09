@@ -63,3 +63,8 @@ blockquote {
 strong {
   color: #FF672B;
 }
+
+div.center_content {
+  margin: 0 auto;
+  max-width: 800px;
+}
