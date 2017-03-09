@@ -52,3 +52,5 @@ gem 'twitter-bootstrap-rails'
 gem 'redcarpet'
 
 gem 'markdownjs-rails'
+
+gem 'unicorn'
