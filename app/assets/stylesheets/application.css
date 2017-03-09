@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+textarea#post_content {
+  height: 800px;
+}
+
+#post_content_rendered {
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+/* User defined */
+p {
+  white-space: normal;
+  line-height: 2em;
+  margin: 1.5em 5px !important;
+}
+
+h2 {
+  white-space: normal;
+  line-height: 2em;
+  margin: 1.5em 5px !important;
+  padding: 0.5em 1em !important;
+  font-size: 20px !important;
+  color: rgb(0, 150, 136) !important;
+  text-align: center !important;
+  border-bottom: 1px solid rgb(238, 238, 238) !important;
+}
+
+h3 {
+  font-size: 18px;
+  white-space: normal;
+  line-height: 2em;
+  margin: 1.5em 5px !important;
+  padding: 0.5em 1em !important;
+  color: rgb(0, 150, 136) !important;
+  text-align: center !important;
+}
+
+blockquote {
+  margin: 10px 5px 10px 1em;
+  padding-right: 10px;
+  border-left-width: 2px;
+  border-left-color: rgb(0, 150, 136);
+  white-space: normal;
+  color: rgb(119, 119, 119);
+  quotes: none;
+}
+strong {
+  color: #FF672B;
+}
