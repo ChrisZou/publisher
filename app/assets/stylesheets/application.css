@@ -23,47 +23,6 @@ textarea#post_content {
   overflow-y: auto;
 }
 
-/* User defined */
-p {
-  white-space: normal;
-  line-height: 2em;
-  margin: 1.5em 5px !important;
-}
-
-h2 {
-  white-space: normal;
-  line-height: 2em;
-  margin: 1.5em 5px !important;
-  padding: 0.5em 1em !important;
-  font-size: 20px !important;
-  color: rgb(0, 150, 136) !important;
-  text-align: center !important;
-  border-bottom: 1px solid rgb(238, 238, 238) !important;
-}
-
-h3 {
-  font-size: 18px;
-  white-space: normal;
-  line-height: 2em;
-  margin: 1.5em 5px !important;
-  padding: 0.5em 1em !important;
-  color: rgb(0, 150, 136) !important;
-  text-align: center !important;
-}
-
-blockquote {
-  margin: 10px 5px 10px 1em;
-  padding-right: 10px;
-  border-left-width: 2px;
-  border-left-color: rgb(0, 150, 136);
-  white-space: normal;
-  color: rgb(119, 119, 119);
-  quotes: none;
-}
-strong {
-  color: #FF672B;
-}
-
 div.center_content {
   margin: 0 auto;
   max-width: 800px;
