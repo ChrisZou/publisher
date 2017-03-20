@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170309021304) do
+ActiveRecord::Schema.define(version: 20170320042505) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20170309021304) do
     t.string   "wechat_gzh_url"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+    t.integer  "index_of_year"
+    t.string   "abstract"
   end
 
 end
