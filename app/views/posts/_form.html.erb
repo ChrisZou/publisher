@@ -60,10 +60,11 @@
 
   <div class="form-group">
     <div class="col-lg-6">
+      Markdown原稿:
       <%= f.text_area :content, :class => 'form-control' %>
     </div>
     <%=f.error_span(:content) %>
-    <div id="post_content_rendered"> <%= @post.render_markdown %></div>
+    <div id="post_content_rendered"> <%= raw(@post.render_markdown) %></div>
   </div>
 
   <div class="form-group">

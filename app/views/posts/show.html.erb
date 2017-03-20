@@ -9,7 +9,7 @@
     <dd><%= @post.jianshu_collection %></dd>
     <dt><strong><%= '知乎专栏' %>:</strong></dt>
     <dd><%= @post.zhihu_collection %></dd>
-    <dt><strong><%= '知乎标签' %>:</strong></dt>
+    <dt><strong><%= '知乎话题' %>:</strong></dt>
     <dd><%= @post.zhihu_tags %></dd>
     <dt><strong><%= '豆瓣评分' %>:</strong></dt>
     <dd><%= @post.douban_rating %></dd>
@@ -17,6 +17,7 @@
     <dd><%= @post.wechat_gzh_url %></dd>
     <dt><strong><%= '开发者前线分享链接' %>:</strong></dt>
     <dd><%= @post.wechat_gzh_url %></dd>
+    Markdown原稿
     <div id="post_show_content"><%= raw(@post.render_markdown) %></div>
   </dl>
 

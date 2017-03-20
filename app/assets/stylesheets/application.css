@@ -14,6 +14,11 @@
  *= require_self
  */
 
+body {
+  font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+}
+
 textarea#post_content {
   height: 800px;
 }
