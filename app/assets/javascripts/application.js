@@ -32,7 +32,9 @@ function selectText(containerid) {
 $(document).on('turbolinks:load', function() {
     $('#post_content').keyup(function () {
             var input = $("#post_content").val();
-            $("#post_content_rendered").html(markdown.toHTML(input));
+            var md = new Remarkable();
+            var marked = md.render(input);
+            $("#post_content_rendered").html(marked);
         }
     );
     
