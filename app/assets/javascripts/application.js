@@ -15,7 +15,6 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
-//= require markdown
 
 function selectText(containerid) {
     if (document.selection) {
